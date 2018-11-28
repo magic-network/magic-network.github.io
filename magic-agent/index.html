@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=615badd5">
+    <script src="../assets/script.js?t=42463e55"></script>
+    <title>Starting your own Gateway - magic.</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">magic.</a>
+            </li>
+            <li class="menu-item -level-1"><a class="link title -active link-magic-agent" href="../magic-agent/index.html">Starting your own Gateway</a>
+              <ul class="headings heading-list">
+                <li class="heading-item -depth-3"><a class="hlink link-configure-routerap:" href="#configure-routerap:">Configure Router/AP:</a>
+                </li>
+                <li class="heading-item -depth-3"><a class="hlink link-minimal-gateway-configuration:" href="#minimal-gateway-configuration:">Minimal Gateway Configuration:</a>
+                </li>
+                <li class="heading-item -depth-3"><a class="hlink link-gateway-tests:" href="#gateway-tests:">Gateway Tests:</a>
+                </li>
+                <li class="heading-item -depth-3"><a class="hlink link-advanced-configuration:" href="#advanced-configuration:">Advanced Configuration:</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-magic-agent">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><p>This repository contains the source code for the following magic-network services:</p>
+<ol>
+<li>the Radius Gateway Server (to be used in conjunction with a router/AP device)</li>
+<li>the Magic Provider Service.</li>
+<li>the Magic Privacy Enabler Service.</li>
+</ol>
+<p>The fastest way to install and run these services is to use docker.  The recommended versions are:</p>
+<ol>
+<li><a href="https://www.docker.com/get-started">docker</a> (18.06.1-ce+)</li>
+<li><a href="https://docs.docker.com/compose/install/">docker-compose</a> (1.22.0+)</li>
+</ol>
+<h4 id="want-to-help">Want to help?</h4>
+<p>Fork, improve and PR. ;-)</p>
+<hr>
+<h1 id="radius-gateway-server">Radius Gateway Server</h1>
+<p>The gateway&apos;s primary goals are to authenticate users, track usage, and charge for network usage. Any magic client user
+within range of your network may utilize your network as long as they agree with your pricing and rules.</p>
+<h4 id="hardware-and-networking:">Hardware &amp; Networking:</h4>
+<p>To setup the gateway, you&apos;ll need:</p>
+<ol>
+<li>a Router/AP device.</li>
+<li>any x86 or ARM device to host the gateway server (for now)</li>
+</ol>
+<p>The radius gateway server will ultimately by hosted on the network supplied by the router/AP, but we suggest
+using a pre-existing internet connection during setup. <em>Support for external radius gateway servers running on cloud providers such as AWS is
+coming soon.</em></p>
+<h4 id="initial-setup-and-run:">Initial Setup &amp; Run:</h4>
+<ol>
+<li>
+<p>While on your gateway server device assuming a unix based system:</p>
+<pre><code>git clone https://github.com/magic-network/magic-agent
+cd magic-agent
+docker-compose up -d
+</code></pre>
+</li>
+<li>
+<p>Verify the gateway is running:</p>
+<pre><code>docker ps
+docker logs &lt;container-id from output of previous command&gt;
+</code></pre>
+</li>
+<li>
+<p>(optional) Stop the gateway</p>
+<pre><code>docker-compose down
+</code></pre>
+</li>
+</ol>
+<h3 id="configure-routerap:">Configure Router/AP:</h3>
+<ol>
+<li>Configure your router to use WPA2-Enterprise. (external guide under development)</li>
+<li>Adjust gateway config with AP details and restart. (external guide under development)</li>
+<li>Verify connection with the magic-cli. (external guide under development)</li>
+</ol>
+<h3 id="minimal-gateway-configuration:">Minimal Gateway Configuration:</h3>
+<p>For the gateway to run properly, you&apos;ll need to complete the config file found in the <code>docker-compose.yml</code> file
+&quot;environments&quot; section.</p>
+<h3 id="gateway-tests:">Gateway Tests:</h3>
+<p>From <code>src/gateway</code>, run:</p>
+<pre><code>python setup.py test
+</code></pre>
+<h3 id="advanced-configuration:">Advanced Configuration:</h3>
+<p>The gateway server extends a default config found at <code>/conf/default-config.hjson</code>. Currently
+supported options are found in the <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Gateway Configuration Reference</a>. In order
+to extend the default configuration:</p>
+<ol>
+<li>
+<p><strong>Extend with docker-compose.yml environment variables.</strong> To override default config keys, specify the
+group and key separated by a underscore character, for example: ADMIN_ACCOUNT, or ADMIN_USER_MIN_BALANCE.</p>
+<pre><code>services:
+  magic-agent:
+    build: .
+    image: magic-agent
+    network_mode: &quot;host&quot;
+    ports:
+      - &quot;1812:1812/udp&quot;
+      - &quot;1813:1813/udp&quot;
+      - &quot;5000:5000&quot;
+    environment:
+      - ADMIN_ACCOUNT=0xdf6ce563D547D56cb60FD7211061a30366D16414
+      - BILLING_TYPE=session
+</code></pre>
+</li>
+<li>
+<p><strong>Extend with a user-config.hjson file.</strong> Example user-config file found in <code>/conf/user-config.example.hjson</code>:</p>
+<ol>
+<li>Create a file named <code>/conf/user-config.hjson</code></li>
+<li>Update with your specific settings</li>
+<li>Run <code>docker-compose build</code> on x86 machines or<code>docker-compose build --build-arg ARCH=armhf</code> on ARM machines in order
+to apply the changes.</li>
+</ol>
+</li>
+</ol>
+<h1 id="payment-provider-service">Payment Provider Service</h1>
+<p>Not implemented yet.</p>
+<h1 id="privacy-enabler-service">Privacy Enabler Service</h1>
+<p>Not implemented yet.</p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../index.html"><span class="title">magic.</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

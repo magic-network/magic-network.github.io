@@ -1,0 +1,80 @@
+{
+  "toc": {
+    "sections": [
+      {
+        "title": "magic.",
+        "source": "intro.md",
+        "url": "index.html",
+        "slug": "index"
+      },
+      {
+        "title": "Starting your own Gateway",
+        "source": "docs/magic-agent/README.md",
+        "url": "magic-agent/index.html",
+        "slug": "magic-agent",
+        "headings": [
+          {
+            "title": "Configure Router/AP:",
+            "depth": 3,
+            "id": "configure-routerap:"
+          },
+          {
+            "title": "Minimal Gateway Configuration:",
+            "depth": 3,
+            "id": "minimal-gateway-configuration:"
+          },
+          {
+            "title": "Gateway Tests:",
+            "depth": 3,
+            "id": "gateway-tests:"
+          },
+          {
+            "title": "Advanced Configuration:",
+            "depth": 3,
+            "id": "advanced-configuration:"
+          }
+        ]
+      }
+    ]
+  },
+  "index": {
+    "index.html": {
+      "source": "intro.md",
+      "title": "magic.",
+      "pageTitle": "magic.",
+      "slug": "index"
+    },
+    "magic-agent/index.html": {
+      "source": "docs/magic-agent/README.md",
+      "title": "Starting your own Gateway - magic.",
+      "pageTitle": "Starting your own Gateway",
+      "slug": "magic-agent",
+      "headings": [
+        {
+          "title": "Configure Router/AP:",
+          "depth": 3,
+          "id": "configure-routerap:"
+        },
+        {
+          "title": "Minimal Gateway Configuration:",
+          "depth": 3,
+          "id": "minimal-gateway-configuration:"
+        },
+        {
+          "title": "Gateway Tests:",
+          "depth": 3,
+          "id": "gateway-tests:"
+        },
+        {
+          "title": "Advanced Configuration:",
+          "depth": 3,
+          "id": "advanced-configuration:"
+        }
+      ]
+    }
+  },
+  "sources": {
+    "intro.md": "index.html",
+    "docs/magic-agent/README.md": "magic-agent/index.html"
+  }
+}
