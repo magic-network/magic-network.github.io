@@ -3,78 +3,168 @@
     "sections": [
       {
         "title": "magic.",
-        "source": "intro.md",
+        "source": "docs/intro.md",
         "url": "index.html",
         "slug": "index"
       },
       {
-        "title": "Starting your own Gateway",
-        "source": "docs/magic-agent/README.md",
-        "url": "magic-agent/index.html",
-        "slug": "magic-agent",
-        "headings": [
+        "title": "Overview - What is Magic?",
+        "sections": [
           {
-            "title": "Configure Router/AP:",
-            "depth": 3,
-            "id": "configure-routerap:"
+            "title": "Intro",
+            "source": "docs/intro.md",
+            "url": "index.html",
+            "slug": "index-2"
           },
           {
-            "title": "Minimal Gateway Configuration:",
-            "depth": 3,
-            "id": "minimal-gateway-configuration:"
+            "title": "Magic User Experience",
+            "source": "docs/magic-user-experience.md",
+            "url": "docs/magic-user-experience.html",
+            "slug": "docsmagic-user-experience"
           },
           {
-            "title": "Gateway Tests:",
-            "depth": 3,
-            "id": "gateway-tests:"
-          },
-          {
-            "title": "Advanced Configuration:",
-            "depth": 3,
-            "id": "advanced-configuration:"
+            "title": "Connection Provider Experience",
+            "source": "docs/connection-provider-experience.md",
+            "url": "docs/connection-provider-experience.html",
+            "slug": "docsconnection-provider-experience"
           }
         ]
+      },
+      {
+        "title": "User Quick Start",
+        "sections": [
+          {
+            "title": "Installing CLI",
+            "source": "docs/github/quick-start/installing-cli.md",
+            "url": "quick-start/installing-cli.html",
+            "slug": "quick-startinstalling-cli",
+            "headings": [
+              {
+                "title": "Requirements",
+                "depth": 2,
+                "id": "requirements"
+              },
+              {
+                "title": "Installation",
+                "depth": 2,
+                "id": "installation"
+              }
+            ]
+          },
+          {
+            "title": "Generating Account"
+          },
+          {
+            "title": "Viewing Balance"
+          }
+        ]
+      },
+      {
+        "title": "Provider Quick Start",
+        "sections": [
+          {
+            "title": "Hardware Pre-requisites"
+          },
+          {
+            "title": "Gateway Server Setup"
+          },
+          {
+            "title": "Router Setup"
+          },
+          {
+            "title": "Client Connection"
+          }
+        ]
+      },
+      {
+        "title": "Guides",
+        "sections": [
+          {
+            "title": "Using rPi as Gateway"
+          },
+          {
+            "title": "Router Configs"
+          },
+          {
+            "title": "Configuring Payments"
+          }
+        ]
+      },
+      {
+        "title": "Architecture",
+        "sections": [
+          {
+            "title": "Primary Components"
+          },
+          {
+            "title": "The Token"
+          },
+          {
+            "title": "Solidity Contracts"
+          },
+          {
+            "title": "Whitepaper"
+          }
+        ]
+      },
+      {
+        "title": "Reference",
+        "sections": [
+          {
+            "title": "Gateway Configuration Options"
+          }
+        ]
+      },
+      {
+        "title": "FAQ"
+      },
+      {
+        "title": "Changelog"
       }
     ]
   },
   "index": {
     "index.html": {
-      "source": "intro.md",
-      "title": "magic.",
-      "pageTitle": "magic.",
-      "slug": "index"
+      "source": "docs/intro.md",
+      "title": "Intro - magic.",
+      "pageTitle": "Intro",
+      "slug": "index-2"
     },
-    "magic-agent/index.html": {
-      "source": "docs/magic-agent/README.md",
-      "title": "Starting your own Gateway - magic.",
-      "pageTitle": "Starting your own Gateway",
-      "slug": "magic-agent",
+    "docs/magic-user-experience.html": {
+      "source": "docs/magic-user-experience.md",
+      "title": "Magic User Experience - magic.",
+      "pageTitle": "Magic User Experience",
+      "slug": "docsmagic-user-experience"
+    },
+    "docs/connection-provider-experience.html": {
+      "source": "docs/connection-provider-experience.md",
+      "title": "Connection Provider Experience - magic.",
+      "pageTitle": "Connection Provider Experience",
+      "slug": "docsconnection-provider-experience"
+    },
+    "quick-start/installing-cli.html": {
+      "source": "docs/github/quick-start/installing-cli.md",
+      "title": "Installing CLI - magic.",
+      "pageTitle": "Installing CLI",
+      "slug": "quick-startinstalling-cli",
       "headings": [
         {
-          "title": "Configure Router/AP:",
-          "depth": 3,
-          "id": "configure-routerap:"
+          "title": "Requirements",
+          "depth": 2,
+          "id": "requirements"
         },
         {
-          "title": "Minimal Gateway Configuration:",
-          "depth": 3,
-          "id": "minimal-gateway-configuration:"
-        },
-        {
-          "title": "Gateway Tests:",
-          "depth": 3,
-          "id": "gateway-tests:"
-        },
-        {
-          "title": "Advanced Configuration:",
-          "depth": 3,
-          "id": "advanced-configuration:"
+          "title": "Installation",
+          "depth": 2,
+          "id": "installation"
         }
       ]
     }
   },
   "sources": {
-    "intro.md": "index.html",
-    "docs/magic-agent/README.md": "magic-agent/index.html"
+    "docs/intro.md": "index.html",
+    "docs/magic-user-experience.md": "docs/magic-user-experience.html",
+    "docs/connection-provider-experience.md": "docs/connection-provider-experience.html",
+    "docs/github/quick-start/installing-cli.md": "quick-start/installing-cli.html"
   }
 }
