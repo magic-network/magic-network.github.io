@@ -17,7 +17,7 @@
             "slug": "index-2"
           },
           {
-            "title": "Magic User Experience",
+            "title": "Magic Client Experience",
             "source": "docs/magic-user-experience.md",
             "url": "docs/magic-user-experience.html",
             "slug": "docsmagic-user-experience"
@@ -80,13 +80,13 @@
         "title": "Guides",
         "sections": [
           {
-            "title": "Using rPi as Gateway"
-          },
-          {
             "title": "Router Configs"
           },
           {
-            "title": "Configuring Payments"
+            "title": "Using rPi as Gateway - Coming Soon"
+          },
+          {
+            "title": "Configuring Payments - Coming Soon"
           }
         ]
       },
@@ -111,7 +111,7 @@
         "title": "Reference",
         "sections": [
           {
-            "title": "Gateway Configuration Options"
+            "title": "Gateway Configuration Options - Coming Soon"
           }
         ]
       },
@@ -132,8 +132,8 @@
     },
     "docs/magic-user-experience.html": {
       "source": "docs/magic-user-experience.md",
-      "title": "Magic User Experience - magic.",
-      "pageTitle": "Magic User Experience",
+      "title": "Magic Client Experience - magic.",
+      "pageTitle": "Magic Client Experience",
       "slug": "docsmagic-user-experience"
     },
     "docs/connection-provider-experience.html": {
