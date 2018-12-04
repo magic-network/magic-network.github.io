@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../assets/style.css?t=615badd5">
+    <script src="../../../assets/script.js?t=42463e55"></script>
+    <title>Advanced Gateway Configuration - magic.</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../../../index.html">magic.</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Overview - What is Magic?</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-index-2" href="../../../index.html">Intro</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-client-experience" href="../../../magic-client-experience.html">Magic Client Experience</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-connection-provider-experience" href="../../../connection-provider-experience.html">Connection Provider Experience</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">User Quick Start</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-cliquick-startinstalling-cli" href="../../../magic-cli/quick-start/installing-cli.html">Installing CLI</a>
+                </li>
+                <li class="menu-item -level-2"><span class="title">Generating Account</span>
+                </li>
+                <li class="menu-item -level-2"><span class="title">Viewing Balance</span>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Provider Quick Start</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentgatewayquick-starthardware-prereqs" href="../../../magic-agent/gateway/quick-start/hardware-prereqs.html">Hardware Pre-requisites</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentgatewayquick-startgateway-server-setup" href="../../../magic-agent/gateway/quick-start/gateway-server-setup.html">Gateway Server Setup</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentgatewayquick-startrouter-setup" href="../../../magic-agent/gateway/quick-start/router-setup.html">Router Setup</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentgatewayquick-startclient-connection" href="../../../magic-agent/gateway/quick-start/client-connection.html">Client Connection</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Guides</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title -active link-magic-agentgatewayguidesconfiguring-your-gateway" href="../../../magic-agent/gateway/guides/configuring-your-gateway.html">Advanced Gateway Configuration</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-default-config-file" href="#default-config-file">Default Config File</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-user-config-file" href="#user-config-file">User Config File</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-docker-compose.yml" href="#docker-compose.yml">Docker-compose.yml</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Architecture</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><span class="title">Primary Components</span>
+                </li>
+                <li class="menu-item -level-2"><span class="title">The Token</span>
+                </li>
+                <li class="menu-item -level-2"><span class="title">Solidity Contracts</span>
+                </li>
+                <li class="menu-item -level-2"><span class="title">Whitepaper</span>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Reference</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentgatewayreferenceadvanced-config" href="../../../magic-agent/gateway/reference/advanced-config.html">Advanced Gateway Configuration</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><span class="title">FAQ</span>
+            </li>
+            <li class="menu-item -level-1"><span class="title">Changelog</span>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-magic-agentgatewayguidesconfiguring-your-gateway">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="configuring-your-gateway">Configuring Your Gateway</h1>
+<p>You have several methods to configure your Magic Gateway. Each method extends the default configuration.</p>
+<h2 id="default-config-file">Default Config File</h2>
+<p>The gateway server extends a default config found at <code>/conf/default-config.hjson</code>. Currently
+supported options are found in the <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Gateway Configuration Reference</a>.</p>
+<h2 id="user-config-file">User Config File</h2>
+<p>If the file <code>/conf/user-config.hjson</code> exists, it will be used to extend the default config .
+For an example of what a user-config file can look like, use <code>/conf/user-config.example.hjson</code> as a reference.</p>
+<p>Steps to include your own config:</p>
+<ol>
+<li>Create a file named <code>/conf/user-config.hjson</code></li>
+<li>Update with your specific settings</li>
+<li>Run <code>docker-compose build</code> on x86 machines or<code>docker-compose build --build-arg ARCH=armhf</code> on ARM machines in order
+to apply the changes.</li>
+</ol>
+<h2 id="docker-compose.yml">Docker-compose.yml</h2>
+<p>Extend with docker-compose.yml environment variables. This will override all other methods of configruation.
+To override default config keys, specify the
+group and key separated by a underscore character, for example: ADMIN_ACCOUNT, or ADMIN_USER_MIN_BALANCE.
+<code>services: magic-agent: build: . image: magic-agent network_mode: &quot;host&quot; ports: - &quot;1812:1812/udp&quot; - &quot;1813:1813/udp&quot; - &quot;5000:5000&quot; environment: - ADMIN_ACCOUNT=0xdf6ce563D547D56cb60FD7211061a30366D16414 - BILLING_TYPE=session</code></p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../../../magic-agent/gateway/quick-start/client-connection.html"><span class="title">Client Connection</span></a></div>
+          <div class="right"><a href="../../../magic-agent/gateway/reference/advanced-config.html"><span class="label">Next: </span><span class="title">Advanced Gateway Configuration</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

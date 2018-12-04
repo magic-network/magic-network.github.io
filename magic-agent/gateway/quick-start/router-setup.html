@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../assets/style.css?t=615badd5">
+    <script src="../../../assets/script.js?t=42463e55"></script>
+    <title>Router Setup - magic.</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../../../index.html">magic.</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Overview - What is Magic?</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-index-2" href="../../../index.html">Intro</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-client-experience" href="../../../magic-client-experience.html">Magic Client Experience</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-connection-provider-experience" href="../../../connection-provider-experience.html">Connection Provider Experience</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">User Quick Start</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-cliquick-startinstalling-cli" href="../../../magic-cli/quick-start/installing-cli.html">Installing CLI</a>
+                </li>
+                <li class="menu-item -level-2"><span class="title">Generating Account</span>
+                </li>
+                <li class="menu-item -level-2"><span class="title">Viewing Balance</span>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Provider Quick Start</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentgatewayquick-starthardware-prereqs" href="../../../magic-agent/gateway/quick-start/hardware-prereqs.html">Hardware Pre-requisites</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentgatewayquick-startgateway-server-setup" href="../../../magic-agent/gateway/quick-start/gateway-server-setup.html">Gateway Server Setup</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title -active link-magic-agentgatewayquick-startrouter-setup" href="../../../magic-agent/gateway/quick-start/router-setup.html">Router Setup</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-openwrt" href="#openwrt">OpenWRT</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-microtik" href="#microtik">MicroTik</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentgatewayquick-startclient-connection" href="../../../magic-agent/gateway/quick-start/client-connection.html">Client Connection</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Guides</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentgatewayguidesconfiguring-your-gateway" href="../../../magic-agent/gateway/guides/configuring-your-gateway.html">Advanced Gateway Configuration</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Architecture</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><span class="title">Primary Components</span>
+                </li>
+                <li class="menu-item -level-2"><span class="title">The Token</span>
+                </li>
+                <li class="menu-item -level-2"><span class="title">Solidity Contracts</span>
+                </li>
+                <li class="menu-item -level-2"><span class="title">Whitepaper</span>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Reference</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentgatewayreferenceadvanced-config" href="../../../magic-agent/gateway/reference/advanced-config.html">Advanced Gateway Configuration</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><span class="title">FAQ</span>
+            </li>
+            <li class="menu-item -level-1"><span class="title">Changelog</span>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-magic-agentgatewayquick-startrouter-setup">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="configure-routerap:">Configure Router/AP:</h1>
+<p>At a high level, this is what you&apos;ll need to configure:</p>
+<ol>
+<li>Set router to WPA2-Enterprise, setting your gateway device&apos;s IP as the gateway server.</li>
+<li>Set hostname of gateway:
+<ul>
+<li>Via a DNS entry on your router. (recommended)</li>
+<li>Via manually changing hostname on your gateway device.</li>
+</ul>
+</li>
+<li>Verify gateway server is configured with the IP of the router.</li>
+</ol>
+<p>Due to the enormous amounts of router firmwares, the procedure to configure them can be very different.  The following
+guides walk you through the most frequently used firmwares:</p>
+<h2 id="openwrt">OpenWRT</h2>
+<p>TODO: Add OpenWRT setup steps</p>
+<h2 id="microtik">MicroTik</h2>
+<p>TODO: Add MicroTik setup steps</p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../../../magic-agent/gateway/quick-start/gateway-server-setup.html"><span class="title">Gateway Server Setup</span></a></div>
+          <div class="right"><a href="../../../magic-agent/gateway/quick-start/client-connection.html"><span class="label">Next: </span><span class="title">Client Connection</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

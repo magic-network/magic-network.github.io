@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../assets/style.css?t=615badd5">
+    <script src="../../../assets/script.js?t=42463e55"></script>
+    <title>Gateway Server Setup - magic.</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../../../index.html">magic.</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Overview - What is Magic?</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-index-2" href="../../../index.html">Intro</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-client-experience" href="../../../magic-client-experience.html">Magic Client Experience</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-connection-provider-experience" href="../../../connection-provider-experience.html">Connection Provider Experience</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">User Quick Start</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-cliquick-startinstalling-cli" href="../../../magic-cli/quick-start/installing-cli.html">Installing CLI</a>
+                </li>
+                <li class="menu-item -level-2"><span class="title">Generating Account</span>
+                </li>
+                <li class="menu-item -level-2"><span class="title">Viewing Balance</span>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Provider Quick Start</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentgatewayquick-starthardware-prereqs" href="../../../magic-agent/gateway/quick-start/hardware-prereqs.html">Hardware Pre-requisites</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title -active link-magic-agentgatewayquick-startgateway-server-setup" href="../../../magic-agent/gateway/quick-start/gateway-server-setup.html">Gateway Server Setup</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-dependencies" href="#dependencies">Dependencies</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-initial-startup" href="#initial-startup">Initial Startup</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-minimal-gateway-configuration:" href="#minimal-gateway-configuration:">Minimal Gateway Configuration:</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentgatewayquick-startrouter-setup" href="../../../magic-agent/gateway/quick-start/router-setup.html">Router Setup</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentgatewayquick-startclient-connection" href="../../../magic-agent/gateway/quick-start/client-connection.html">Client Connection</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Guides</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentgatewayguidesconfiguring-your-gateway" href="../../../magic-agent/gateway/guides/configuring-your-gateway.html">Advanced Gateway Configuration</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Architecture</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><span class="title">Primary Components</span>
+                </li>
+                <li class="menu-item -level-2"><span class="title">The Token</span>
+                </li>
+                <li class="menu-item -level-2"><span class="title">Solidity Contracts</span>
+                </li>
+                <li class="menu-item -level-2"><span class="title">Whitepaper</span>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Reference</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentgatewayreferenceadvanced-config" href="../../../magic-agent/gateway/reference/advanced-config.html">Advanced Gateway Configuration</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><span class="title">FAQ</span>
+            </li>
+            <li class="menu-item -level-1"><span class="title">Changelog</span>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-magic-agentgatewayquick-startgateway-server-setup">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="radius-gateway-server">Radius Gateway Server</h1>
+<p>As a reminder, the gateway runs on a separate device that should eventually be connected to the router. It&apos;s primary
+goal is to authenticate users, track usage, and charge for network usage. Any magic client user
+within range of your network may utilize your network as long as they agree with your pricing and rules.</p>
+<p><em>During gateway setup, it&apos;s best to have your gateway device connected to an existing internet connection before configuring your
+router.</em></p>
+<h2 id="dependencies">Dependencies</h2>
+<ol>
+<li><a href="https://www.docker.com/get-started">docker</a> (18.06.1-ce+)</li>
+<li><a href="https://docs.docker.com/compose/install/">docker-compose</a> (1.22.0+)</li>
+</ol>
+<h2 id="initial-startup">Initial Startup</h2>
+<ol>
+<li>
+<p>While on your gateway server device assuming a unix based system:</p>
+<pre><code>git clone https://github.com/magic-network/magic-agent
+cd magic-agent
+docker-compose up -d
+</code></pre>
+</li>
+<li>
+<p>Verify the gateway is running:</p>
+<pre><code>docker ps
+docker logs &lt;container-id from output of previous command&gt;
+</code></pre>
+</li>
+<li>
+<p>(optional) Stop the gateway</p>
+<pre><code>docker-compose down
+</code></pre>
+</li>
+</ol>
+<h2 id="minimal-gateway-configuration:">Minimal Gateway Configuration:</h2>
+<p>For the gateway to run properly, you&apos;ll need to complete the config file found in the <code>docker-compose.yml</code> file
+&quot;environments&quot; section.</p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../../../magic-agent/gateway/quick-start/hardware-prereqs.html"><span class="title">Hardware Pre-requisites</span></a></div>
+          <div class="right"><a href="../../../magic-agent/gateway/quick-start/router-setup.html"><span class="label">Next: </span><span class="title">Router Setup</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
