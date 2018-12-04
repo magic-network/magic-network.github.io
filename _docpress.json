@@ -64,9 +64,9 @@
         "sections": [
           {
             "title": "Hardware Pre-requisites",
-            "source": "docs/magic-agent/gateway/quick-start/hardware-prereqs.md",
-            "url": "magic-agent/gateway/quick-start/hardware-prereqs.html",
-            "slug": "magic-agentgatewayquick-starthardware-prereqs",
+            "source": "docs/magic-agent/provider/gateway/quick-start/hardware-prereqs.md",
+            "url": "magic-agent/provider/gateway/quick-start/hardware-prereqs.html",
+            "slug": "magic-agentprovidergatewayquick-starthardware-prereqs",
             "headings": [
               {
                 "title": "Wifi Router (Access Point)",
@@ -82,9 +82,9 @@
           },
           {
             "title": "Gateway Server Setup",
-            "source": "docs/magic-agent/gateway/quick-start/gateway-server-setup.md",
-            "url": "magic-agent/gateway/quick-start/gateway-server-setup.html",
-            "slug": "magic-agentgatewayquick-startgateway-server-setup",
+            "source": "docs/magic-agent/provider/gateway/quick-start/gateway-server-setup.md",
+            "url": "magic-agent/provider/gateway/quick-start/gateway-server-setup.html",
+            "slug": "magic-agentprovidergatewayquick-startgateway-server-setup",
             "headings": [
               {
                 "title": "Dependencies",
@@ -105,9 +105,9 @@
           },
           {
             "title": "Router Setup",
-            "source": "docs/magic-agent/gateway/quick-start/router-setup.md",
-            "url": "magic-agent/gateway/quick-start/router-setup.html",
-            "slug": "magic-agentgatewayquick-startrouter-setup",
+            "source": "docs/magic-agent/provider/gateway/quick-start/router-setup.md",
+            "url": "magic-agent/provider/gateway/quick-start/router-setup.html",
+            "slug": "magic-agentprovidergatewayquick-startrouter-setup",
             "headings": [
               {
                 "title": "OpenWRT",
@@ -123,9 +123,9 @@
           },
           {
             "title": "Client Connection",
-            "source": "docs/magic-agent/gateway/quick-start/client-connection.md",
-            "url": "magic-agent/gateway/quick-start/client-connection.html",
-            "slug": "magic-agentgatewayquick-startclient-connection",
+            "source": "docs/magic-agent/provider/gateway/quick-start/client-connection.md",
+            "url": "magic-agent/provider/gateway/quick-start/client-connection.html",
+            "slug": "magic-agentprovidergatewayquick-startclient-connection",
             "headings": [
               {
                 "title": "Verify Magic Gateway Logs",
@@ -146,9 +146,9 @@
         "sections": [
           {
             "title": "Advanced Gateway Configuration",
-            "source": "docs/magic-agent/gateway/guides/configuring-your-gateway.md",
-            "url": "magic-agent/gateway/guides/configuring-your-gateway.html",
-            "slug": "magic-agentgatewayguidesconfiguring-your-gateway",
+            "source": "docs/magic-agent/provider/gateway/guides/configuring-your-gateway.md",
+            "url": "magic-agent/provider/gateway/guides/configuring-your-gateway.html",
+            "slug": "magic-agentprovidergatewayguidesconfiguring-your-gateway",
             "headings": [
               {
                 "title": "Default Config File",
@@ -166,6 +166,12 @@
                 "id": "docker-compose.yml"
               }
             ]
+          },
+          {
+            "title": "RaspberryPi as Gateway Setup",
+            "source": "docs/magic-agent/provider/gateway/guides/raspberry-pi-setup.md",
+            "url": "magic-agent/provider/gateway/guides/raspberry-pi-setup.html",
+            "slug": "magic-agentprovidergatewayguidesraspberry-pi-setup"
           }
         ]
       },
@@ -191,9 +197,9 @@
         "sections": [
           {
             "title": "Advanced Gateway Configuration",
-            "source": "docs/magic-agent/gateway/reference/advanced-config.md",
-            "url": "magic-agent/gateway/reference/advanced-config.html",
-            "slug": "magic-agentgatewayreferenceadvanced-config"
+            "source": "docs/magic-agent/provider/gateway/reference/advanced-config.md",
+            "url": "magic-agent/provider/gateway/reference/advanced-config.html",
+            "slug": "magic-agentprovidergatewayreferenceadvanced-config"
           }
         ]
       },
@@ -242,11 +248,11 @@
         }
       ]
     },
-    "magic-agent/gateway/quick-start/hardware-prereqs.html": {
-      "source": "docs/magic-agent/gateway/quick-start/hardware-prereqs.md",
+    "magic-agent/provider/gateway/quick-start/hardware-prereqs.html": {
+      "source": "docs/magic-agent/provider/gateway/quick-start/hardware-prereqs.md",
       "title": "Hardware Pre-requisites - magic.",
       "pageTitle": "Hardware Pre-requisites",
-      "slug": "magic-agentgatewayquick-starthardware-prereqs",
+      "slug": "magic-agentprovidergatewayquick-starthardware-prereqs",
       "headings": [
         {
           "title": "Wifi Router (Access Point)",
@@ -260,11 +266,11 @@
         }
       ]
     },
-    "magic-agent/gateway/quick-start/gateway-server-setup.html": {
-      "source": "docs/magic-agent/gateway/quick-start/gateway-server-setup.md",
+    "magic-agent/provider/gateway/quick-start/gateway-server-setup.html": {
+      "source": "docs/magic-agent/provider/gateway/quick-start/gateway-server-setup.md",
       "title": "Gateway Server Setup - magic.",
       "pageTitle": "Gateway Server Setup",
-      "slug": "magic-agentgatewayquick-startgateway-server-setup",
+      "slug": "magic-agentprovidergatewayquick-startgateway-server-setup",
       "headings": [
         {
           "title": "Dependencies",
@@ -283,11 +289,11 @@
         }
       ]
     },
-    "magic-agent/gateway/quick-start/router-setup.html": {
-      "source": "docs/magic-agent/gateway/quick-start/router-setup.md",
+    "magic-agent/provider/gateway/quick-start/router-setup.html": {
+      "source": "docs/magic-agent/provider/gateway/quick-start/router-setup.md",
       "title": "Router Setup - magic.",
       "pageTitle": "Router Setup",
-      "slug": "magic-agentgatewayquick-startrouter-setup",
+      "slug": "magic-agentprovidergatewayquick-startrouter-setup",
       "headings": [
         {
           "title": "OpenWRT",
@@ -301,11 +307,11 @@
         }
       ]
     },
-    "magic-agent/gateway/quick-start/client-connection.html": {
-      "source": "docs/magic-agent/gateway/quick-start/client-connection.md",
+    "magic-agent/provider/gateway/quick-start/client-connection.html": {
+      "source": "docs/magic-agent/provider/gateway/quick-start/client-connection.md",
       "title": "Client Connection - magic.",
       "pageTitle": "Client Connection",
-      "slug": "magic-agentgatewayquick-startclient-connection",
+      "slug": "magic-agentprovidergatewayquick-startclient-connection",
       "headings": [
         {
           "title": "Verify Magic Gateway Logs",
@@ -319,11 +325,11 @@
         }
       ]
     },
-    "magic-agent/gateway/guides/configuring-your-gateway.html": {
-      "source": "docs/magic-agent/gateway/guides/configuring-your-gateway.md",
+    "magic-agent/provider/gateway/guides/configuring-your-gateway.html": {
+      "source": "docs/magic-agent/provider/gateway/guides/configuring-your-gateway.md",
       "title": "Advanced Gateway Configuration - magic.",
       "pageTitle": "Advanced Gateway Configuration",
-      "slug": "magic-agentgatewayguidesconfiguring-your-gateway",
+      "slug": "magic-agentprovidergatewayguidesconfiguring-your-gateway",
       "headings": [
         {
           "title": "Default Config File",
@@ -342,11 +348,17 @@
         }
       ]
     },
-    "magic-agent/gateway/reference/advanced-config.html": {
-      "source": "docs/magic-agent/gateway/reference/advanced-config.md",
+    "magic-agent/provider/gateway/guides/raspberry-pi-setup.html": {
+      "source": "docs/magic-agent/provider/gateway/guides/raspberry-pi-setup.md",
+      "title": "RaspberryPi as Gateway Setup - magic.",
+      "pageTitle": "RaspberryPi as Gateway Setup",
+      "slug": "magic-agentprovidergatewayguidesraspberry-pi-setup"
+    },
+    "magic-agent/provider/gateway/reference/advanced-config.html": {
+      "source": "docs/magic-agent/provider/gateway/reference/advanced-config.md",
       "title": "Advanced Gateway Configuration - magic.",
       "pageTitle": "Advanced Gateway Configuration",
-      "slug": "magic-agentgatewayreferenceadvanced-config"
+      "slug": "magic-agentprovidergatewayreferenceadvanced-config"
     }
   },
   "sources": {
@@ -354,11 +366,13 @@
     "docs/magic-client-experience.md": "magic-client-experience.html",
     "docs/connection-provider-experience.md": "connection-provider-experience.html",
     "docs/magic-cli/quick-start/installing-cli.md": "magic-cli/quick-start/installing-cli.html",
-    "docs/magic-agent/gateway/quick-start/hardware-prereqs.md": "magic-agent/gateway/quick-start/hardware-prereqs.html",
-    "docs/magic-agent/gateway/quick-start/gateway-server-setup.md": "magic-agent/gateway/quick-start/gateway-server-setup.html",
-    "docs/magic-agent/gateway/quick-start/router-setup.md": "magic-agent/gateway/quick-start/router-setup.html",
-    "docs/magic-agent/gateway/quick-start/client-connection.md": "magic-agent/gateway/quick-start/client-connection.html",
-    "docs/magic-agent/gateway/guides/configuring-your-gateway.md": "magic-agent/gateway/guides/configuring-your-gateway.html",
-    "docs/magic-agent/gateway/reference/advanced-config.md": "magic-agent/gateway/reference/advanced-config.html"
+    "docs/magic-agent/provider/gateway/quick-start/hardware-prereqs.md": "magic-agent/provider/gateway/quick-start/hardware-prereqs.html",
+    "docs/magic-agent/provider/gateway/quick-start/gateway-server-setup.md": "magic-agent/provider/gateway/quick-start/gateway-server-setup.html",
+    "docs/magic-agent/provider/gateway/quick-start/router-setup.md": "magic-agent/provider/gateway/quick-start/router-setup.html",
+    "docs/magic-agent/provider/gateway/quick-start/client-connection.md": "magic-agent/provider/gateway/quick-start/client-connection.html",
+    "docs/magic-agent/provider/gateway/guides/configuring-your-gateway.md": "magic-agent/provider/gateway/guides/configuring-your-gateway.html",
+    "docs/magic-agent/provider/gateway/guides/raspberry-pi-setup.md": "magic-agent/provider/gateway/guides/raspberry-pi-setup.html",
+    "docs/magic-agent/provider/gateway/reference/advanced-config.md": "magic-agent/provider/gateway/reference/advanced-config.html",
+    "docs/magic-agent/provider/gateway/quick-start/images/placeholder.png": "magic-agent/provider/gateway/quick-start/images/placeholder.png"
   }
 }
