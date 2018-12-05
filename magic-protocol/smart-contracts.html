@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=615badd5">
+    <script src="../assets/script.js?t=42463e55"></script>
+    <title>Smart Contracts - magic.</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">magic.</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Overview - What is Magic?</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-index-2" href="../index.html">Intro</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">User Quick Start</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-cliquick-startinstalling-cli" href="../magic-cli/quick-start/installing-cli.html">Installing CLI</a>
+                </li>
+                <li class="menu-item -level-2"><span class="title">Generating Account</span>
+                </li>
+                <li class="menu-item -level-2"><span class="title">Viewing Balance</span>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Provider Quick Start</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayquick-starthardware-prereqs" href="../magic-agent/provider/gateway/quick-start/hardware-prereqs.html">Hardware Pre-requisites</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayquick-startgateway-server-setup" href="../magic-agent/provider/gateway/quick-start/gateway-server-setup.html">Gateway Server Setup</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayquick-startrouter-setup" href="../magic-agent/provider/gateway/quick-start/router-setup.html">Router Setup</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayquick-startclient-connection" href="../magic-agent/provider/gateway/quick-start/client-connection.html">Client Connection</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Guides</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayguidesconfiguring-your-gateway" href="../magic-agent/provider/gateway/guides/configuring-your-gateway.html">Advanced Gateway Configuration</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayguidesraspberry-pi-setup" href="../magic-agent/provider/gateway/guides/raspberry-pi-setup.html">RaspberryPi as Gateway Setup</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Architecture</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><span class="title">Primary Components</span>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-protocolmagic-coin" href="../magic-protocol/magic-coin.html">The Token</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title -active link-magic-protocolsmart-contracts" href="../magic-protocol/smart-contracts.html">Smart Contracts</a>
+                </li>
+                <li class="menu-item -level-2"><span class="title">Whitepaper</span>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Reference</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayreferenceadvanced-config" href="../magic-agent/provider/gateway/reference/advanced-config.html">Advanced Gateway Configuration</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><span class="title">FAQ</span>
+            </li>
+            <li class="menu-item -level-1"><span class="title">Changelog</span>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-magic-protocolsmart-contracts">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="smart-contracts">Smart Contracts</h1>
+<p>Magic is an open-source and distributed project, built on top of smart contracts running on the popular <a href="https://www.ethereum.org/">Ethereum</a>
+Virtual Machine (EMV).  Smart contracts provide a transparent &quot;ledger&quot; and accounting system, and more importantly gives
+the ability to define &amp; distribute incentives for proper use of the network in a purely mathematical and distributed way.</p>
+<p>Incentivized behaviors:</p>
+<ol>
+<li>
+<p>Quality Internet Service:  Providers should be providing consistent and fast service to those using their network.<br>
+In order to keep this a distributed system, Magic defines a Proof of Availability (POA) concept which seeks to formally prove and define
+the availability and quality of a provider in which all parties of the system can agree upon.  More on this in
+the forthcoming whitepaper. Current implementation is speculative and subject to change as tokenomics are defined.</p>
+</li>
+<li>
+<p>Use as a utility:  Magic coins are technically a &quot;utility token&quot; which should be used for buying &amp; selling internet
+connection by a consumer or any internet connected device.</p>
+</li>
+</ol>
+<p>The contracts that define the rules to this system are open-sourced.  The following contracts are defined:</p>
+<p><a href="https://github.com/magic-network/magic-protocol">Magic Protocol on Github</a></p>
+<p>High-level contracts:</p>
+<ol>
+<li><a href="https://github.com/magic-network/magic-protocol/blob/master/contracts/token/MagicToken.sol">MagicCoin</a>: <a href="https://rinkeby.etherscan.io/token/0xc3cbfd0d0f583987ea43d92f7bc2624052ffd6f5">View on Rinkeby</a></li>
+<li>Minter</li>
+<li>Staker</li>
+<li>Rounds</li>
+<li>MagicCoin</li>
+</ol>
+<p>In order to interface with these contracts on Ethereum&apos;s online IDE <a href="https://remix.ethereum.org">Remix</a>, you can import the
+remix formatted contracts <a href="https://github.com/magic-network/magic-protocol/tree/master/remix">here</a>.</p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../magic-protocol/magic-coin.html"><span class="title">The Token</span></a></div>
+          <div class="right"><a href="../magic-agent/provider/gateway/reference/advanced-config.html"><span class="label">Next: </span><span class="title">Advanced Gateway Configuration</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

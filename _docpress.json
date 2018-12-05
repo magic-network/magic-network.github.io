@@ -170,10 +170,16 @@
             "title": "Primary Components"
           },
           {
-            "title": "The Token"
+            "title": "The Token",
+            "source": "docs/magic-protocol/magic-coin.md",
+            "url": "magic-protocol/magic-coin.html",
+            "slug": "magic-protocolmagic-coin"
           },
           {
-            "title": "Solidity Contracts"
+            "title": "Smart Contracts",
+            "source": "docs/magic-protocol/smart-contracts.md",
+            "url": "magic-protocol/smart-contracts.html",
+            "slug": "magic-protocolsmart-contracts"
           },
           {
             "title": "Whitepaper"
@@ -330,6 +336,18 @@
       "pageTitle": "RaspberryPi as Gateway Setup",
       "slug": "magic-agentprovidergatewayguidesraspberry-pi-setup"
     },
+    "magic-protocol/magic-coin.html": {
+      "source": "docs/magic-protocol/magic-coin.md",
+      "title": "The Token - magic.",
+      "pageTitle": "The Token",
+      "slug": "magic-protocolmagic-coin"
+    },
+    "magic-protocol/smart-contracts.html": {
+      "source": "docs/magic-protocol/smart-contracts.md",
+      "title": "Smart Contracts - magic.",
+      "pageTitle": "Smart Contracts",
+      "slug": "magic-protocolsmart-contracts"
+    },
     "magic-agent/provider/gateway/reference/advanced-config.html": {
       "source": "docs/magic-agent/provider/gateway/reference/advanced-config.md",
       "title": "Advanced Gateway Configuration - magic.",
@@ -346,6 +364,8 @@
     "docs/magic-agent/provider/gateway/quick-start/client-connection.md": "magic-agent/provider/gateway/quick-start/client-connection.html",
     "docs/magic-agent/provider/gateway/guides/configuring-your-gateway.md": "magic-agent/provider/gateway/guides/configuring-your-gateway.html",
     "docs/magic-agent/provider/gateway/guides/raspberry-pi-setup.md": "magic-agent/provider/gateway/guides/raspberry-pi-setup.html",
+    "docs/magic-protocol/magic-coin.md": "magic-protocol/magic-coin.html",
+    "docs/magic-protocol/smart-contracts.md": "magic-protocol/smart-contracts.html",
     "docs/magic-agent/provider/gateway/reference/advanced-config.md": "magic-agent/provider/gateway/reference/advanced-config.html",
     "docs/magic-agent/provider/gateway/quick-start/images/placeholder.png": "magic-agent/provider/gateway/quick-start/images/placeholder.png"
   }
