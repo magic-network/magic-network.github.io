@@ -19,10 +19,6 @@
               <ul class="submenu">
                 <li class="menu-item -level-2"><a class="link title  link-index-2" href="../../../../index.html">Intro</a>
                 </li>
-                <li class="menu-item -level-2"><a class="link title  link-magic-client-experience" href="../../../../magic-client-experience.html">Magic Client Experience</a>
-                </li>
-                <li class="menu-item -level-2"><a class="link title  link-connection-provider-experience" href="../../../../connection-provider-experience.html">Connection Provider Experience</a>
-                </li>
               </ul>
             </li>
             <li class="menu-item -level-1 -parent"><span class="title">User Quick Start</span>
@@ -43,9 +39,9 @@
                 </li>
                 <li class="menu-item -level-2"><a class="link title -active link-magic-agentprovidergatewayquick-startrouter-setup" href="../../../../magic-agent/provider/gateway/quick-start/router-setup.html">Router Setup</a>
                   <ul class="headings heading-list">
-                    <li class="heading-item -depth-2"><a class="hlink link-openwrt" href="#openwrt">OpenWRT</a>
-                    </li>
                     <li class="heading-item -depth-2"><a class="hlink link-microtik" href="#microtik">MicroTik</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-openwrt" href="#openwrt">OpenWRT</a>
                     </li>
                   </ul>
                 </li>
@@ -94,23 +90,65 @@
         <div class="markdown-body"><h1 id="configure-routerap:">Configure Router/AP:</h1>
 <p>At a high level, this is what you&apos;ll need to configure:</p>
 <ol>
-<li>Set router to WPA2-Enterprise, setting your gateway device&apos;s IP as the gateway server.</li>
-<li>Set hostname of gateway:
+<li>
+<p>Enable a virtual wireless access point on your router using WPA2-Enterprise, enabling and configuring RADIUS and setting your gateway device&apos;s IP as the gateway server.</p>
+</li>
+<li>
+<p>Set hostname of gateway:</p>
 <ul>
 <li>Via a DNS entry on your router. (recommended)</li>
 <li>Via manually changing hostname on your gateway device.</li>
 </ul>
 </li>
-<li>Verify gateway server is configured with the IP of the router.</li>
+<li>
+<p>Verify gateway server is configured with the IP of the router.</p>
+</li>
 </ol>
 <p>Due to the enormous amounts of router firmwares, the procedure to configure them can be very different.  The following
-guides walk you through the most frequently used firmwares:</p>
+guides walk you through the most frequently used firmwares.</p>
+<h2 id="microtik">MicroTik</h2>
+<ol>
+<li>
+<p>Access your router configuration by navigating to its IP address and using webfig</p>
+</li>
+<li>
+<p>In Wireless&gt;Security Profiles. Create a new security profile.</p>
+<ul>
+<li>Set to dynamic keys</li>
+<li>Authentication Type: WPA2 EAP</li>
+<li>Unicast cyphers and group cyphers: aes ccm</li>
+<li>Supplicant identity: magic</li>
+<li>EAP Methods: passthrough</li>
+</ul>
+<p>NOTE: The supplicant identity must be named magic.</p>
+</li>
+<li>
+<p>In Wireless&gt;Interfaces. Create a new virtual access point.</p>
+<ul>
+<li>Mode: ap bridge</li>
+<li>SSID: <magic></magic></li>
+<li>Security Profile: &lt;created in step 2&gt;</li>
+</ul>
+<p>NOTE: Uncheck &#x201C;Default Forwarding&#x201D; (disables client-to-client direct communication)</p>
+</li>
+<li>
+<p>In RADIUS. Enable and configure set communication between router and radius server on your gateway.</p>
+<ul>
+<li>Enable: checked</li>
+<li>Service: wireless</li>
+<li>Address: gateway IP address</li>
+<li>Secret: magicsecret</li>
+</ul>
+<p>Save configuration. Click &quot;Incoming&quot; button to set Port number and accept requests.</p>
+<ul>
+<li>Accept: checked</li>
+<li>Port: 3799</li>
+</ul>
+<p>NOTE: Run <code>ifconfig</code> on your gateway to get its IP</p>
+</li>
+</ol>
 <h2 id="openwrt">OpenWRT</h2>
 <p>TODO: Add OpenWRT setup steps</p>
-<p><img src="images/placeholder.png" alt="Step 1"></p>
-<h2 id="microtik">MicroTik</h2>
-<p>TODO: Add MicroTik setup steps</p>
-<p><img src="images/placeholder.png" alt="Step 1"></p>
 
         </div>
         <div class="footer-nav">

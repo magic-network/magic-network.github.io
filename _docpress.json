@@ -15,18 +15,6 @@
             "source": "docs/intro.md",
             "url": "index.html",
             "slug": "index-2"
-          },
-          {
-            "title": "Magic Client Experience",
-            "source": "docs/magic-client-experience.md",
-            "url": "magic-client-experience.html",
-            "slug": "magic-client-experience"
-          },
-          {
-            "title": "Connection Provider Experience",
-            "source": "docs/connection-provider-experience.md",
-            "url": "connection-provider-experience.html",
-            "slug": "connection-provider-experience"
           }
         ]
       },
@@ -110,14 +98,14 @@
             "slug": "magic-agentprovidergatewayquick-startrouter-setup",
             "headings": [
               {
-                "title": "OpenWRT",
-                "depth": 2,
-                "id": "openwrt"
-              },
-              {
                 "title": "MicroTik",
                 "depth": 2,
                 "id": "microtik"
+              },
+              {
+                "title": "OpenWRT",
+                "depth": 2,
+                "id": "openwrt"
               }
             ]
           },
@@ -218,18 +206,6 @@
       "pageTitle": "Intro",
       "slug": "index-2"
     },
-    "magic-client-experience.html": {
-      "source": "docs/magic-client-experience.md",
-      "title": "Magic Client Experience - magic.",
-      "pageTitle": "Magic Client Experience",
-      "slug": "magic-client-experience"
-    },
-    "connection-provider-experience.html": {
-      "source": "docs/connection-provider-experience.md",
-      "title": "Connection Provider Experience - magic.",
-      "pageTitle": "Connection Provider Experience",
-      "slug": "connection-provider-experience"
-    },
     "magic-cli/quick-start/installing-cli.html": {
       "source": "docs/magic-cli/quick-start/installing-cli.md",
       "title": "Installing CLI - magic.",
@@ -296,14 +272,14 @@
       "slug": "magic-agentprovidergatewayquick-startrouter-setup",
       "headings": [
         {
-          "title": "OpenWRT",
-          "depth": 2,
-          "id": "openwrt"
-        },
-        {
           "title": "MicroTik",
           "depth": 2,
           "id": "microtik"
+        },
+        {
+          "title": "OpenWRT",
+          "depth": 2,
+          "id": "openwrt"
         }
       ]
     },
@@ -363,8 +339,6 @@
   },
   "sources": {
     "docs/intro.md": "index.html",
-    "docs/magic-client-experience.md": "magic-client-experience.html",
-    "docs/connection-provider-experience.md": "connection-provider-experience.html",
     "docs/magic-cli/quick-start/installing-cli.md": "magic-cli/quick-start/installing-cli.html",
     "docs/magic-agent/provider/gateway/quick-start/hardware-prereqs.md": "magic-agent/provider/gateway/quick-start/hardware-prereqs.html",
     "docs/magic-agent/provider/gateway/quick-start/gateway-server-setup.md": "magic-agent/provider/gateway/quick-start/gateway-server-setup.html",
