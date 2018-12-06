@@ -36,14 +36,19 @@
                 "title": "Installation",
                 "depth": 2,
                 "id": "installation"
+              },
+              {
+                "title": "Running CLI",
+                "depth": 2,
+                "id": "running-cli"
               }
             ]
           },
           {
-            "title": "Generating Account"
-          },
-          {
-            "title": "Viewing Balance"
+            "title": "Generating Test Account",
+            "source": "docs/magic-cli/quick-start/generating-account.md",
+            "url": "magic-cli/quick-start/generating-account.html",
+            "slug": "magic-cliquick-startgenerating-account"
           }
         ]
       },
@@ -227,8 +232,19 @@
           "title": "Installation",
           "depth": 2,
           "id": "installation"
+        },
+        {
+          "title": "Running CLI",
+          "depth": 2,
+          "id": "running-cli"
         }
       ]
+    },
+    "magic-cli/quick-start/generating-account.html": {
+      "source": "docs/magic-cli/quick-start/generating-account.md",
+      "title": "Generating Test Account - magic.",
+      "pageTitle": "Generating Test Account",
+      "slug": "magic-cliquick-startgenerating-account"
     },
     "magic-agent/provider/gateway/quick-start/hardware-prereqs.html": {
       "source": "docs/magic-agent/provider/gateway/quick-start/hardware-prereqs.md",
@@ -358,6 +374,7 @@
   "sources": {
     "docs/intro.md": "index.html",
     "docs/magic-cli/quick-start/installing-cli.md": "magic-cli/quick-start/installing-cli.html",
+    "docs/magic-cli/quick-start/generating-account.md": "magic-cli/quick-start/generating-account.html",
     "docs/magic-agent/provider/gateway/quick-start/hardware-prereqs.md": "magic-agent/provider/gateway/quick-start/hardware-prereqs.html",
     "docs/magic-agent/provider/gateway/quick-start/gateway-server-setup.md": "magic-agent/provider/gateway/quick-start/gateway-server-setup.html",
     "docs/magic-agent/provider/gateway/quick-start/router-setup.md": "magic-agent/provider/gateway/quick-start/router-setup.html",
@@ -367,6 +384,8 @@
     "docs/magic-protocol/magic-coin.md": "magic-protocol/magic-coin.html",
     "docs/magic-protocol/smart-contracts.md": "magic-protocol/smart-contracts.html",
     "docs/magic-agent/provider/gateway/reference/advanced-config.md": "magic-agent/provider/gateway/reference/advanced-config.html",
+    "docs/style.css": "style.css",
+    "docs/magic-cli/quick-start/images/magic-menu.png": "magic-cli/quick-start/images/magic-menu.png",
     "docs/magic-agent/provider/gateway/quick-start/images/placeholder.png": "magic-agent/provider/gateway/quick-start/images/placeholder.png"
   }
 }
