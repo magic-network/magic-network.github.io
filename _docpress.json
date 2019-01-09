@@ -3,7 +3,7 @@
     "sections": [
       {
         "title": "magic.",
-        "source": "docs/intro.md",
+        "source": "magic-docs/docs/intro.md",
         "url": "index.html",
         "slug": "index"
       },
@@ -12,7 +12,7 @@
         "sections": [
           {
             "title": "Intro",
-            "source": "docs/intro.md",
+            "source": "magic-docs/docs/intro.md",
             "url": "index.html",
             "slug": "index-2"
           }
@@ -23,7 +23,7 @@
         "sections": [
           {
             "title": "Installing CLI",
-            "source": "docs/magic-cli/quick-start/installing-cli.md",
+            "source": "magic-docs/docs/magic-cli/quick-start/installing-cli.md",
             "url": "magic-cli/quick-start/installing-cli.html",
             "slug": "magic-cliquick-startinstalling-cli",
             "headings": [
@@ -46,7 +46,7 @@
           },
           {
             "title": "Generating Test Account",
-            "source": "docs/magic-cli/quick-start/generating-account.md",
+            "source": "magic-docs/docs/magic-cli/quick-start/generating-account.md",
             "url": "magic-cli/quick-start/generating-account.html",
             "slug": "magic-cliquick-startgenerating-account"
           }
@@ -57,7 +57,7 @@
         "sections": [
           {
             "title": "Hardware Pre-requisites",
-            "source": "docs/magic-agent/provider/gateway/quick-start/hardware-prereqs.md",
+            "source": "magic-docs/docs/magic-agent/provider/gateway/quick-start/hardware-prereqs.md",
             "url": "magic-agent/provider/gateway/quick-start/hardware-prereqs.html",
             "slug": "magic-agentprovidergatewayquick-starthardware-prereqs",
             "headings": [
@@ -75,7 +75,7 @@
           },
           {
             "title": "Gateway Server Setup",
-            "source": "docs/magic-agent/provider/gateway/quick-start/gateway-server-setup.md",
+            "source": "magic-docs/docs/magic-agent/provider/gateway/quick-start/gateway-server-setup.md",
             "url": "magic-agent/provider/gateway/quick-start/gateway-server-setup.html",
             "slug": "magic-agentprovidergatewayquick-startgateway-server-setup",
             "headings": [
@@ -98,7 +98,7 @@
           },
           {
             "title": "Router Setup",
-            "source": "docs/magic-agent/provider/gateway/quick-start/router-setup.md",
+            "source": "magic-docs/docs/magic-agent/provider/gateway/quick-start/router-setup.md",
             "url": "magic-agent/provider/gateway/quick-start/router-setup.html",
             "slug": "magic-agentprovidergatewayquick-startrouter-setup",
             "headings": [
@@ -116,7 +116,7 @@
           },
           {
             "title": "Client Connection",
-            "source": "docs/magic-agent/provider/gateway/quick-start/client-connection.md",
+            "source": "magic-docs/docs/magic-agent/provider/gateway/quick-start/client-connection.md",
             "url": "magic-agent/provider/gateway/quick-start/client-connection.html",
             "slug": "magic-agentprovidergatewayquick-startclient-connection",
             "headings": [
@@ -139,7 +139,7 @@
         "sections": [
           {
             "title": "Advanced Gateway Configuration",
-            "source": "docs/magic-agent/provider/gateway/guides/configuring-your-gateway.md",
+            "source": "magic-docs/docs/magic-agent/provider/gateway/guides/configuring-your-gateway.md",
             "url": "magic-agent/provider/gateway/guides/configuring-your-gateway.html",
             "slug": "magic-agentprovidergatewayguidesconfiguring-your-gateway",
             "headings": [
@@ -162,7 +162,7 @@
           },
           {
             "title": "RaspberryPi as Gateway Setup",
-            "source": "docs/magic-agent/provider/gateway/guides/raspberry-pi-setup.md",
+            "source": "magic-docs/docs/magic-agent/provider/gateway/guides/raspberry-pi-setup.md",
             "url": "magic-agent/provider/gateway/guides/raspberry-pi-setup.html",
             "slug": "magic-agentprovidergatewayguidesraspberry-pi-setup"
           }
@@ -176,13 +176,13 @@
           },
           {
             "title": "The Token",
-            "source": "docs/magic-protocol/magic-coin.md",
+            "source": "magic-docs/docs/magic-protocol/magic-coin.md",
             "url": "magic-protocol/magic-coin.html",
             "slug": "magic-protocolmagic-coin"
           },
           {
             "title": "Smart Contracts",
-            "source": "docs/magic-protocol/smart-contracts.md",
+            "source": "magic-docs/docs/magic-protocol/smart-contracts.md",
             "url": "magic-protocol/smart-contracts.html",
             "slug": "magic-protocolsmart-contracts"
           },
@@ -196,7 +196,7 @@
         "sections": [
           {
             "title": "Advanced Gateway Configuration",
-            "source": "docs/magic-agent/provider/gateway/reference/advanced-config.md",
+            "source": "magic-docs/docs/magic-agent/provider/gateway/reference/advanced-config.md",
             "url": "magic-agent/provider/gateway/reference/advanced-config.html",
             "slug": "magic-agentprovidergatewayreferenceadvanced-config"
           }
@@ -212,13 +212,13 @@
   },
   "index": {
     "index.html": {
-      "source": "docs/intro.md",
+      "source": "magic-docs/docs/intro.md",
       "title": "Intro - magic.",
       "pageTitle": "Intro",
       "slug": "index-2"
     },
     "magic-cli/quick-start/installing-cli.html": {
-      "source": "docs/magic-cli/quick-start/installing-cli.md",
+      "source": "magic-docs/docs/magic-cli/quick-start/installing-cli.md",
       "title": "Installing CLI - magic.",
       "pageTitle": "Installing CLI",
       "slug": "magic-cliquick-startinstalling-cli",
@@ -241,13 +241,13 @@
       ]
     },
     "magic-cli/quick-start/generating-account.html": {
-      "source": "docs/magic-cli/quick-start/generating-account.md",
+      "source": "magic-docs/docs/magic-cli/quick-start/generating-account.md",
       "title": "Generating Test Account - magic.",
       "pageTitle": "Generating Test Account",
       "slug": "magic-cliquick-startgenerating-account"
     },
     "magic-agent/provider/gateway/quick-start/hardware-prereqs.html": {
-      "source": "docs/magic-agent/provider/gateway/quick-start/hardware-prereqs.md",
+      "source": "magic-docs/docs/magic-agent/provider/gateway/quick-start/hardware-prereqs.md",
       "title": "Hardware Pre-requisites - magic.",
       "pageTitle": "Hardware Pre-requisites",
       "slug": "magic-agentprovidergatewayquick-starthardware-prereqs",
@@ -265,7 +265,7 @@
       ]
     },
     "magic-agent/provider/gateway/quick-start/gateway-server-setup.html": {
-      "source": "docs/magic-agent/provider/gateway/quick-start/gateway-server-setup.md",
+      "source": "magic-docs/docs/magic-agent/provider/gateway/quick-start/gateway-server-setup.md",
       "title": "Gateway Server Setup - magic.",
       "pageTitle": "Gateway Server Setup",
       "slug": "magic-agentprovidergatewayquick-startgateway-server-setup",
@@ -288,7 +288,7 @@
       ]
     },
     "magic-agent/provider/gateway/quick-start/router-setup.html": {
-      "source": "docs/magic-agent/provider/gateway/quick-start/router-setup.md",
+      "source": "magic-docs/docs/magic-agent/provider/gateway/quick-start/router-setup.md",
       "title": "Router Setup - magic.",
       "pageTitle": "Router Setup",
       "slug": "magic-agentprovidergatewayquick-startrouter-setup",
@@ -306,7 +306,7 @@
       ]
     },
     "magic-agent/provider/gateway/quick-start/client-connection.html": {
-      "source": "docs/magic-agent/provider/gateway/quick-start/client-connection.md",
+      "source": "magic-docs/docs/magic-agent/provider/gateway/quick-start/client-connection.md",
       "title": "Client Connection - magic.",
       "pageTitle": "Client Connection",
       "slug": "magic-agentprovidergatewayquick-startclient-connection",
@@ -324,7 +324,7 @@
       ]
     },
     "magic-agent/provider/gateway/guides/configuring-your-gateway.html": {
-      "source": "docs/magic-agent/provider/gateway/guides/configuring-your-gateway.md",
+      "source": "magic-docs/docs/magic-agent/provider/gateway/guides/configuring-your-gateway.md",
       "title": "Advanced Gateway Configuration - magic.",
       "pageTitle": "Advanced Gateway Configuration",
       "slug": "magic-agentprovidergatewayguidesconfiguring-your-gateway",
@@ -347,45 +347,45 @@
       ]
     },
     "magic-agent/provider/gateway/guides/raspberry-pi-setup.html": {
-      "source": "docs/magic-agent/provider/gateway/guides/raspberry-pi-setup.md",
+      "source": "magic-docs/docs/magic-agent/provider/gateway/guides/raspberry-pi-setup.md",
       "title": "RaspberryPi as Gateway Setup - magic.",
       "pageTitle": "RaspberryPi as Gateway Setup",
       "slug": "magic-agentprovidergatewayguidesraspberry-pi-setup"
     },
     "magic-protocol/magic-coin.html": {
-      "source": "docs/magic-protocol/magic-coin.md",
+      "source": "magic-docs/docs/magic-protocol/magic-coin.md",
       "title": "The Token - magic.",
       "pageTitle": "The Token",
       "slug": "magic-protocolmagic-coin"
     },
     "magic-protocol/smart-contracts.html": {
-      "source": "docs/magic-protocol/smart-contracts.md",
+      "source": "magic-docs/docs/magic-protocol/smart-contracts.md",
       "title": "Smart Contracts - magic.",
       "pageTitle": "Smart Contracts",
       "slug": "magic-protocolsmart-contracts"
     },
     "magic-agent/provider/gateway/reference/advanced-config.html": {
-      "source": "docs/magic-agent/provider/gateway/reference/advanced-config.md",
+      "source": "magic-docs/docs/magic-agent/provider/gateway/reference/advanced-config.md",
       "title": "Advanced Gateway Configuration - magic.",
       "pageTitle": "Advanced Gateway Configuration",
       "slug": "magic-agentprovidergatewayreferenceadvanced-config"
     }
   },
   "sources": {
-    "docs/intro.md": "index.html",
-    "docs/magic-cli/quick-start/installing-cli.md": "magic-cli/quick-start/installing-cli.html",
-    "docs/magic-cli/quick-start/generating-account.md": "magic-cli/quick-start/generating-account.html",
-    "docs/magic-agent/provider/gateway/quick-start/hardware-prereqs.md": "magic-agent/provider/gateway/quick-start/hardware-prereqs.html",
-    "docs/magic-agent/provider/gateway/quick-start/gateway-server-setup.md": "magic-agent/provider/gateway/quick-start/gateway-server-setup.html",
-    "docs/magic-agent/provider/gateway/quick-start/router-setup.md": "magic-agent/provider/gateway/quick-start/router-setup.html",
-    "docs/magic-agent/provider/gateway/quick-start/client-connection.md": "magic-agent/provider/gateway/quick-start/client-connection.html",
-    "docs/magic-agent/provider/gateway/guides/configuring-your-gateway.md": "magic-agent/provider/gateway/guides/configuring-your-gateway.html",
-    "docs/magic-agent/provider/gateway/guides/raspberry-pi-setup.md": "magic-agent/provider/gateway/guides/raspberry-pi-setup.html",
-    "docs/magic-protocol/magic-coin.md": "magic-protocol/magic-coin.html",
-    "docs/magic-protocol/smart-contracts.md": "magic-protocol/smart-contracts.html",
-    "docs/magic-agent/provider/gateway/reference/advanced-config.md": "magic-agent/provider/gateway/reference/advanced-config.html",
-    "docs/style.css": "style.css",
-    "docs/magic-cli/quick-start/images/magic-menu.png": "magic-cli/quick-start/images/magic-menu.png",
-    "docs/magic-agent/provider/gateway/quick-start/images/placeholder.png": "magic-agent/provider/gateway/quick-start/images/placeholder.png"
+    "magic-docs/docs/intro.md": "index.html",
+    "magic-docs/docs/magic-cli/quick-start/installing-cli.md": "magic-cli/quick-start/installing-cli.html",
+    "magic-docs/docs/magic-cli/quick-start/generating-account.md": "magic-cli/quick-start/generating-account.html",
+    "magic-docs/docs/magic-agent/provider/gateway/quick-start/hardware-prereqs.md": "magic-agent/provider/gateway/quick-start/hardware-prereqs.html",
+    "magic-docs/docs/magic-agent/provider/gateway/quick-start/gateway-server-setup.md": "magic-agent/provider/gateway/quick-start/gateway-server-setup.html",
+    "magic-docs/docs/magic-agent/provider/gateway/quick-start/router-setup.md": "magic-agent/provider/gateway/quick-start/router-setup.html",
+    "magic-docs/docs/magic-agent/provider/gateway/quick-start/client-connection.md": "magic-agent/provider/gateway/quick-start/client-connection.html",
+    "magic-docs/docs/magic-agent/provider/gateway/guides/configuring-your-gateway.md": "magic-agent/provider/gateway/guides/configuring-your-gateway.html",
+    "magic-docs/docs/magic-agent/provider/gateway/guides/raspberry-pi-setup.md": "magic-agent/provider/gateway/guides/raspberry-pi-setup.html",
+    "magic-docs/docs/magic-protocol/magic-coin.md": "magic-protocol/magic-coin.html",
+    "magic-docs/docs/magic-protocol/smart-contracts.md": "magic-protocol/smart-contracts.html",
+    "magic-docs/docs/magic-agent/provider/gateway/reference/advanced-config.md": "magic-agent/provider/gateway/reference/advanced-config.html",
+    "magic-docs/docs/style.css": "style.css",
+    "magic-docs/docs/magic-cli/quick-start/images/magic-menu.png": "magic-cli/quick-start/images/magic-menu.png",
+    "magic-docs/docs/magic-agent/provider/gateway/quick-start/images/placeholder.png": "magic-agent/provider/gateway/quick-start/images/placeholder.png"
   }
 }
