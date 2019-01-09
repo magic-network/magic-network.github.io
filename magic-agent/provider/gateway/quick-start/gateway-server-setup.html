@@ -94,6 +94,9 @@ goal is to authenticate users, track usage, and charge for network usage. Any ma
 within range of your network may utilize your network as long as they agree with your pricing and rules.</p>
 <p><em>During gateway setup, it&apos;s best to have your gateway device connected to an existing internet connection before configuring your
 router.</em></p>
+<h4 id="want-to-help">Want to help?</h4>
+<p>Fork, improve and PR. View our <a href="https://github.com/magic-network/magic-agent/blob/master/CONTRIBUTING.md">contributing guide</a>
+for more details.</p>
 <h2 id="dependencies">Dependencies</h2>
 <ol>
 <li><a href="https://www.docker.com/get-started">docker</a> (18.06.1-ce+)</li>
@@ -105,6 +108,7 @@ router.</em></p>
 <p>While on your gateway server device assuming a unix based system:</p>
 <pre><code>git clone https://github.com/magic-network/magic-agent
 cd magic-agent
+docker-compose pull
 docker-compose up -d
 </code></pre>
 </li>
