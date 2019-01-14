@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../../../../assets/style.css?t=615badd5">
-    <link rel="stylesheet" href="../../../../style.css?t=7ba6e81f">
+    <link rel="stylesheet" href="../../../../style.css?t=1b8b6358">
     <script src="../../../../assets/script.js?t=42463e55"></script>
     <title>Hardware Pre-requisites - magic.</title>
     <meta name="viewport" content="width=device-width">
@@ -99,18 +99,21 @@
 <li><strong>RFC-5176 Support</strong> - Change-of-Authorization &amp; Disconnect messages.  Without this feature, Magic doesn&apos;t have the ability to disconnect people from your network.</li>
 </ul>
 <p>It may be difficult to know if your router supports the above features. A router diagnostics
-tool will be provided soon to run against your router, but in the meantime, we recommend purchasing one of these inexpensive &amp; fully-featured routers:</p>
+tool will be provided soon to run against your router, but in the meantime, we recommend purchasing one of these inexpensive &amp; fully-featured routers.</p>
 <p>Recommended Routers:</p>
 <ul>
 <li><a href="https://mikrotik.com/products" target="_blank">MicroTik</a></li>
 </ul>
-<p><em>in some cases, your router may have the features available, but your firmware doesn&apos;t support them.  In this case, you may use
+<p><em>In some cases, your router may have the features available, but your firmware doesn&apos;t support them.  In this case, you may use
 the open source router firmware called <a href="https://openwrt.org/" target="_blank">OpenWrt</a>.</em></p>
 <h2 id="gateway-server-device">Gateway Server Device</h2>
-<p>This is a separate device, such as a Raspberry Pi, that runs the magic-agent in the &quot;gateway&quot; role.  All authentication
-requests to use your magic router will be sent through this device, and it will be where you configure the availability and
+<p>This is a separate device, such as a Raspberry Pi , that runs the magic-agent in the &quot;gateway&quot; role.  All authentication
+requests to use your Magic Access Point will be sent through this device, and it will be where you configure the availability and
 pricing of your Access Point.</p>
 <p><a href="../guides/raspberry-pi-setup.html">Raspberry Pi device setup guide</a></p>
+<p>In general, magic-agent can run on abt x86 or ARM resource, and virtually any OS that follows POSIX compliant standards.</p>
+<p><em>Magic Agent runs using <a href="https://docs.docker.com/docker-for-windows/install/">Docker</a> If you&apos;re using a Windows device, you&apos;ll need Windows 10 Pro, Enterprise, or Education. Docker <a href="https://github.com/magic-network/magic-agent/issues/3">does not currently support Windows 10 Home</a>.</em></p>
+<p>While you can install and run the agent on a laptop for testing purposes, your gateway will not be available if you power your laptop down. As such, we recommend installing on a device that can serve as a persistent connected gateway which Magic clients can access continously.</p>
 <p><em>We will soon support a cloud-based gateway server to reduce the need to run a local device for this role.</em></p>
 
         </div>
