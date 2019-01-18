@@ -411,6 +411,7 @@
     "magic-docs/docs/magic-protocol/smart-contracts.md": "magic-protocol/smart-contracts.html",
     "magic-docs/docs/magic-protocol/contract-addresses.md": "magic-protocol/contract-addresses.html",
     "magic-docs/docs/magic-agent/provider/gateway/reference/advanced-config.md": "magic-agent/provider/gateway/reference/advanced-config.html",
+    "magic-docs/docs/analytics.js": "analytics.js",
     "magic-docs/docs/style.css": "style.css",
     "magic-docs/docs/magic-cli/quick-start/images/magic-menu.png": "magic-cli/quick-start/images/magic-menu.png",
     "magic-docs/docs/magic-agent/provider/gateway/quick-start/images/placeholder.png": "magic-agent/provider/gateway/quick-start/images/placeholder.png"
