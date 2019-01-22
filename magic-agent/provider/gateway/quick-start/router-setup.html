@@ -110,42 +110,42 @@
 <h2 id="microtik">MicroTik</h2>
 <ol>
 <li>
-<p>Access your router configuration by navigating to its IP address and using webfig</p>
+<p>After initial setup of a MicroTik router, navigate again to it&apos;s portal at <code>http://192.168.88.1/webfig</code>.</p>
 </li>
 <li>
-<p>In Wireless&gt;Security Profiles. Create a new security profile.</p>
+<p>In <code>Wireless &gt; Security Profiles</code> section, Create a new security profile.</p>
 <ul>
-<li>Set to dynamic keys</li>
-<li>Authentication Type: WPA2 EAP</li>
-<li>Unicast cyphers and group cyphers: aes ccm</li>
-<li>Supplicant identity: magic</li>
-<li>EAP Methods: passthrough</li>
+<li>Set to <strong>dynamic keys</strong></li>
+<li>Authentication Type: <strong>WPA2 EAP</strong></li>
+<li>Unicast cyphers and group cyphers: <strong>aes ccm</strong></li>
+<li>Supplicant identity: <strong>magic</strong></li>
+<li>EAP Methods: <strong>passthrough</strong></li>
 </ul>
 <p>NOTE: The supplicant identity must be named magic.</p>
 </li>
 <li>
-<p>In Wireless&gt;Interfaces. Create a new virtual access point.</p>
+<p>In the <code>Wireless &gt; Interfaces</code> section, Create a new virtual access point.</p>
 <ul>
-<li>Mode: ap bridge</li>
-<li>SSID: <magic></magic></li>
-<li>Security Profile: &lt;created in step 2&gt;</li>
+<li>Mode: <strong>ap bridge</strong></li>
+<li>SSID: <strong>magic</strong></li>
+<li>Security Profile: <strong>magic</strong> (supplicant identity from step 2)</li>
 </ul>
-<p>NOTE: Uncheck &#x201C;Default Forwarding&#x201D; (disables client-to-client direct communication)</p>
+<p>NOTE: Uncheck <strong>Default Forwarding</strong> (disables client-to-client direct communication)</p>
 </li>
 <li>
-<p>In RADIUS. Enable and configure set communication between router and radius server on your gateway.</p>
+<p>In the <code>Radius</code> section, Click <code>Add New</code> and create with the following config:</p>
 <ul>
-<li>Enable: checked</li>
-<li>Service: wireless</li>
-<li>Address: gateway IP address</li>
-<li>Secret: magicsecret</li>
+<li>Enable: <strong>checked</strong></li>
+<li>Service: <strong>wireless</strong></li>
+<li>Address: <strong>&lt;your magic gateway ip&gt;</strong> (Please contact us to request an closed beta default gateway server in the cloud)</li>
+<li>Secret: <strong>magicsecret</strong></li>
 </ul>
-<p>Save configuration. Click &quot;Incoming&quot; button to set Port number and accept requests.</p>
+<p>Save configuration. Find &amp; click the &quot;Incoming&quot; button (still in the <code>Radius</code> section) to set Port number and accept requests.</p>
 <ul>
-<li>Accept: checked</li>
-<li>Port: 3799</li>
+<li>Accept: <strong>checked</strong></li>
+<li>Port: <strong>3799</strong></li>
 </ul>
-<p>NOTE: Run <code>ifconfig</code> on your gateway to get its IP</p>
+<p>NOTE: To receive the ip of your pi gateway, run the terminal command <code>ifconfig</code>.</p>
 </li>
 </ol>
 <h2 id="openwrt">OpenWRT</h2>
