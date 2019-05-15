@@ -48,6 +48,30 @@
                 <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayguidesconfiguring-your-gateway" href="../../../../magic-agent/provider/gateway/guides/configuring-your-gateway.html">Advanced Gateway Configuration</a>
                 </li>
                 <li class="menu-item -level-2"><a class="link title -active link-magic-agentprovidergatewayguidesraspberry-pi-setup" href="../../../../magic-agent/provider/gateway/guides/raspberry-pi-setup.html">RaspberryPi as Gateway Setup</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-raspberry-pi-pre-requisites" href="#raspberry-pi-pre-requisites">Raspberry Pi Pre-requisites</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-install-magic-pre-requisites" href="#install-magic-pre-requisites">Install Magic Pre-requisites</a>
+                      <ul class="heading-list -depth-2">
+                        <li class="heading-item -depth-3"><a class="hlink link-update" href="#update">Update</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-install-git" href="#install-git">Install git</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-install-pip" href="#install-pip">Install pip</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-install-docker" href="#install-docker">Install Docker</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-add-user-to-docker-group" href="#add-user-to-docker-group">Add user to Docker group</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-install-docker-compose" href="#install-docker-compose">Install Docker Compose</a>
+                        </li>
+                        <li class="heading-item -depth-3"><a class="hlink link-reboot" href="#reboot">Reboot</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-install-magic" href="#install-magic">Install Magic</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </li>
@@ -83,8 +107,42 @@
           <div class="right">
           </div>
         </div>
-        <div class="markdown-body"><h1 id="setup-raspberry-pi-as-gateway">Setup Raspberry Pi as Gateway</h1>
-<p>Coming soon.</p>
+        <div class="markdown-body"><h1 id="using-a-raspberry-pi-as-a-gateway">Using a Raspberry Pi as a Gateway</h1>
+<p>For this tutorial, we&#x2019;ve dedicated a Raspberry Pi 3 Model B to serve as a gateway.</p>
+<p>If you already have a Pi setup that is connected to an existing internet connection, simply follow the instructions below to install Magic Agent on the Pi.</p>
+<h2 id="raspberry-pi-pre-requisites">Raspberry Pi Pre-requisites</h2>
+<ul>
+<li>Running Raspbian (Lite is sufficient)</li>
+<li>Connected to the internet</li>
+</ul>
+<p>Note: The Pi should be connected to the internet on the same network as you are planning to install Magic and needs to maintain internet connectivity in order to serve as a gateway for Magic Clients to connect through.</p>
+<h2 id="install-magic-pre-requisites">Install Magic Pre-requisites</h2>
+<h3 id="update">Update</h3>
+<p>Some packages may fail to resolve if you don&apos;t first update Raspbian</p>
+<p><code>sudo apt update</code></p>
+<h3 id="install-git">Install git</h3>
+<p><code>sudo apt install git</code></p>
+<h3 id="install-pip">Install pip</h3>
+<p><code>sudo apt install python-pip</code></p>
+<h3 id="install-docker">Install Docker</h3>
+<p><code>curl -fsSL get.docker.com -o get-docker.sh &amp;&amp; sh get-docker.sh</code></p>
+<h3 id="add-user-to-docker-group">Add user to Docker group</h3>
+<p>Running the docker install script will tell you to add the user to the docker group by running</p>
+<p><code>sudo usermod -aG docker pi</code></p>
+<p>Not doing this will make attaching to the Docker daemon fail later on in the setup process</p>
+<h3 id="install-docker-compose">Install Docker Compose</h3>
+<p>As of 5/14/2019 installing docker-compose through pip will fail giving the following error: <code>TypeError: unsupported operand types for -=: &apos;Retry&apos; and &apos;int&apos;</code></p>
+<p>Currently you have to first install an old version using <code>apt</code></p>
+<p><code>sudo apt install docker-compose</code></p>
+<p>and then upgrade to a newer version, but not the newest version, since that also fails to install due to <a href="https://github.com/docker/compose/issues/6617">https://github.com/docker/compose/issues/6617</a></p>
+<p><code>sudo pip install docker-compose==1.23.2</code></p>
+<h3 id="reboot">Reboot</h3>
+<p>You won&apos;t be able to connect to the Docker daemon until you restart</p>
+<p><code>sudo reboot</code></p>
+<h2 id="install-magic">Install Magic</h2>
+<p>Follow the same steps as the Quick Start:
+<a href="https://magic-network.github.io/magic-agent/provider/gateway/quick-start/gateway-server-setup.html">https://magic-network.github.io/magic-agent/provider/gateway/quick-start/gateway-server-setup.html</a></p>
+<p>Depending on permissions on the Pi, you may need to modify the steps above with sudo.</p>
 
         </div>
         <div class="footer-nav">

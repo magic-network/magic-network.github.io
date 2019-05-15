@@ -164,7 +164,61 @@
             "title": "RaspberryPi as Gateway Setup",
             "source": "magic-docs/docs/magic-agent/provider/gateway/guides/raspberry-pi-setup.md",
             "url": "magic-agent/provider/gateway/guides/raspberry-pi-setup.html",
-            "slug": "magic-agentprovidergatewayguidesraspberry-pi-setup"
+            "slug": "magic-agentprovidergatewayguidesraspberry-pi-setup",
+            "headings": [
+              {
+                "title": "Raspberry Pi Pre-requisites",
+                "depth": 2,
+                "id": "raspberry-pi-pre-requisites"
+              },
+              {
+                "title": "Install Magic Pre-requisites",
+                "depth": 2,
+                "id": "install-magic-pre-requisites",
+                "headings": [
+                  {
+                    "title": "Update",
+                    "depth": 3,
+                    "id": "update"
+                  },
+                  {
+                    "title": "Install git",
+                    "depth": 3,
+                    "id": "install-git"
+                  },
+                  {
+                    "title": "Install pip",
+                    "depth": 3,
+                    "id": "install-pip"
+                  },
+                  {
+                    "title": "Install Docker",
+                    "depth": 3,
+                    "id": "install-docker"
+                  },
+                  {
+                    "title": "Add user to Docker group",
+                    "depth": 3,
+                    "id": "add-user-to-docker-group"
+                  },
+                  {
+                    "title": "Install Docker Compose",
+                    "depth": 3,
+                    "id": "install-docker-compose"
+                  },
+                  {
+                    "title": "Reboot",
+                    "depth": 3,
+                    "id": "reboot"
+                  }
+                ]
+              },
+              {
+                "title": "Install Magic",
+                "depth": 2,
+                "id": "install-magic"
+              }
+            ]
           }
         ]
       },
@@ -363,7 +417,61 @@
       "source": "magic-docs/docs/magic-agent/provider/gateway/guides/raspberry-pi-setup.md",
       "title": "RaspberryPi as Gateway Setup - magic.",
       "pageTitle": "RaspberryPi as Gateway Setup",
-      "slug": "magic-agentprovidergatewayguidesraspberry-pi-setup"
+      "slug": "magic-agentprovidergatewayguidesraspberry-pi-setup",
+      "headings": [
+        {
+          "title": "Raspberry Pi Pre-requisites",
+          "depth": 2,
+          "id": "raspberry-pi-pre-requisites"
+        },
+        {
+          "title": "Install Magic Pre-requisites",
+          "depth": 2,
+          "id": "install-magic-pre-requisites",
+          "headings": [
+            {
+              "title": "Update",
+              "depth": 3,
+              "id": "update"
+            },
+            {
+              "title": "Install git",
+              "depth": 3,
+              "id": "install-git"
+            },
+            {
+              "title": "Install pip",
+              "depth": 3,
+              "id": "install-pip"
+            },
+            {
+              "title": "Install Docker",
+              "depth": 3,
+              "id": "install-docker"
+            },
+            {
+              "title": "Add user to Docker group",
+              "depth": 3,
+              "id": "add-user-to-docker-group"
+            },
+            {
+              "title": "Install Docker Compose",
+              "depth": 3,
+              "id": "install-docker-compose"
+            },
+            {
+              "title": "Reboot",
+              "depth": 3,
+              "id": "reboot"
+            }
+          ]
+        },
+        {
+          "title": "Install Magic",
+          "depth": 2,
+          "id": "install-magic"
+        }
+      ]
     },
     "magic-protocol/magic-coin.html": {
       "source": "magic-docs/docs/magic-protocol/magic-coin.md",
