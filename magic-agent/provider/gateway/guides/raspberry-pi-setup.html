@@ -52,22 +52,6 @@
                     <li class="heading-item -depth-2"><a class="hlink link-raspberry-pi-pre-requisites" href="#raspberry-pi-pre-requisites">Raspberry Pi Pre-requisites</a>
                     </li>
                     <li class="heading-item -depth-2"><a class="hlink link-install-magic-pre-requisites" href="#install-magic-pre-requisites">Install Magic Pre-requisites</a>
-                      <ul class="heading-list -depth-2">
-                        <li class="heading-item -depth-3"><a class="hlink link-update" href="#update">Update</a>
-                        </li>
-                        <li class="heading-item -depth-3"><a class="hlink link-install-git" href="#install-git">Install git</a>
-                        </li>
-                        <li class="heading-item -depth-3"><a class="hlink link-install-pip" href="#install-pip">Install pip</a>
-                        </li>
-                        <li class="heading-item -depth-3"><a class="hlink link-install-docker" href="#install-docker">Install Docker</a>
-                        </li>
-                        <li class="heading-item -depth-3"><a class="hlink link-add-user-to-docker-group" href="#add-user-to-docker-group">Add user to Docker group</a>
-                        </li>
-                        <li class="heading-item -depth-3"><a class="hlink link-install-docker-compose" href="#install-docker-compose">Install Docker Compose</a>
-                        </li>
-                        <li class="heading-item -depth-3"><a class="hlink link-reboot" href="#reboot">Reboot</a>
-                        </li>
-                      </ul>
                     </li>
                     <li class="heading-item -depth-2"><a class="hlink link-install-magic" href="#install-magic">Install Magic</a>
                     </li>
@@ -117,26 +101,26 @@
 </ul>
 <p>Note: The Pi should be connected to the internet on the same network as you are planning to install Magic and needs to maintain internet connectivity in order to serve as a gateway for Magic Clients to connect through.</p>
 <h2 id="install-magic-pre-requisites">Install Magic Pre-requisites</h2>
-<h3 id="update">Update</h3>
+<h4 id="update">Update</h4>
 <p>Some packages may fail to resolve if you don&apos;t first update Raspbian</p>
 <p><code>sudo apt update</code></p>
-<h3 id="install-git">Install git</h3>
+<h4 id="install-git">Install git</h4>
 <p><code>sudo apt install git</code></p>
-<h3 id="install-pip">Install pip</h3>
+<h4 id="install-pip">Install pip</h4>
 <p><code>sudo apt install python-pip</code></p>
-<h3 id="install-docker">Install Docker</h3>
+<h4 id="install-docker">Install Docker</h4>
 <p><code>curl -fsSL get.docker.com -o get-docker.sh &amp;&amp; sh get-docker.sh</code></p>
-<h3 id="add-user-to-docker-group">Add user to Docker group</h3>
+<h4 id="add-user-to-docker-group">Add user to Docker group</h4>
 <p>Running the docker install script will tell you to add the user to the docker group by running</p>
 <p><code>sudo usermod -aG docker pi</code></p>
 <p>Not doing this will make attaching to the Docker daemon fail later on in the setup process</p>
-<h3 id="install-docker-compose">Install Docker Compose</h3>
+<h4 id="install-docker-compose">Install Docker Compose</h4>
 <p>As of 5/14/2019 installing docker-compose through pip will fail giving the following error: <code>TypeError: unsupported operand types for -=: &apos;Retry&apos; and &apos;int&apos;</code></p>
 <p>Currently you have to first install an old version using <code>apt</code></p>
 <p><code>sudo apt install docker-compose</code></p>
 <p>and then upgrade to a newer version, but not the newest version, since that also fails to install due to <a href="https://github.com/docker/compose/issues/6617">https://github.com/docker/compose/issues/6617</a></p>
 <p><code>sudo pip install docker-compose==1.23.2</code></p>
-<h3 id="reboot">Reboot</h3>
+<h4 id="reboot">Reboot</h4>
 <p>You won&apos;t be able to connect to the Docker daemon until you restart</p>
 <p><code>sudo reboot</code></p>
 <h2 id="install-magic">Install Magic</h2>

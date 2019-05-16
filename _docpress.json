@@ -174,44 +174,7 @@
               {
                 "title": "Install Magic Pre-requisites",
                 "depth": 2,
-                "id": "install-magic-pre-requisites",
-                "headings": [
-                  {
-                    "title": "Update",
-                    "depth": 3,
-                    "id": "update"
-                  },
-                  {
-                    "title": "Install git",
-                    "depth": 3,
-                    "id": "install-git"
-                  },
-                  {
-                    "title": "Install pip",
-                    "depth": 3,
-                    "id": "install-pip"
-                  },
-                  {
-                    "title": "Install Docker",
-                    "depth": 3,
-                    "id": "install-docker"
-                  },
-                  {
-                    "title": "Add user to Docker group",
-                    "depth": 3,
-                    "id": "add-user-to-docker-group"
-                  },
-                  {
-                    "title": "Install Docker Compose",
-                    "depth": 3,
-                    "id": "install-docker-compose"
-                  },
-                  {
-                    "title": "Reboot",
-                    "depth": 3,
-                    "id": "reboot"
-                  }
-                ]
+                "id": "install-magic-pre-requisites"
               },
               {
                 "title": "Install Magic",
@@ -427,44 +390,7 @@
         {
           "title": "Install Magic Pre-requisites",
           "depth": 2,
-          "id": "install-magic-pre-requisites",
-          "headings": [
-            {
-              "title": "Update",
-              "depth": 3,
-              "id": "update"
-            },
-            {
-              "title": "Install git",
-              "depth": 3,
-              "id": "install-git"
-            },
-            {
-              "title": "Install pip",
-              "depth": 3,
-              "id": "install-pip"
-            },
-            {
-              "title": "Install Docker",
-              "depth": 3,
-              "id": "install-docker"
-            },
-            {
-              "title": "Add user to Docker group",
-              "depth": 3,
-              "id": "add-user-to-docker-group"
-            },
-            {
-              "title": "Install Docker Compose",
-              "depth": 3,
-              "id": "install-docker-compose"
-            },
-            {
-              "title": "Reboot",
-              "depth": 3,
-              "id": "reboot"
-            }
-          ]
+          "id": "install-magic-pre-requisites"
         },
         {
           "title": "Install Magic",
