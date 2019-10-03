@@ -180,6 +180,11 @@
                 "title": "Install Magic",
                 "depth": 2,
                 "id": "install-magic"
+              },
+              {
+                "title": "Run Magic on startup",
+                "depth": 2,
+                "id": "run-magic-on-startup"
               }
             ]
           }
@@ -396,6 +401,11 @@
           "title": "Install Magic",
           "depth": 2,
           "id": "install-magic"
+        },
+        {
+          "title": "Run Magic on startup",
+          "depth": 2,
+          "id": "run-magic-on-startup"
         }
       ]
     },

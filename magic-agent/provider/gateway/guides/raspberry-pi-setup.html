@@ -55,6 +55,8 @@
                     </li>
                     <li class="heading-item -depth-2"><a class="hlink link-install-magic" href="#install-magic">Install Magic</a>
                     </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-run-magic-on-startup" href="#run-magic-on-startup">Run Magic on startup</a>
+                    </li>
                   </ul>
                 </li>
               </ul>
@@ -127,6 +129,16 @@
 <p>Follow the same steps as the Quick Start:
 <a href="https://magic-network.github.io/magic-agent/provider/gateway/quick-start/gateway-server-setup.html">https://magic-network.github.io/magic-agent/provider/gateway/quick-start/gateway-server-setup.html</a></p>
 <p>Depending on permissions on the Pi, you may need to modify the steps above with sudo.</p>
+<h2 id="run-magic-on-startup">Run Magic on startup</h2>
+<p>There are various ways of running a program on startup so if there is a method you prefer please feel free to use that method instead.</p>
+<p>Our default recommended method is to edit the <code>rc.local</code> file since we only want to have the program run once.</p>
+<p>In the terminal type in:</p>
+<p><code>sudo nano /etc/rc.local</code></p>
+<p>Now add the line:</p>
+<p><code>docker-compose -f &lt;location of magic agent&gt;/docker-compose.yml up -d</code></p>
+<p>Assuming you installed the magic agent to the default location the path will be:</p>
+<p><code>/home/pi/magic-agent/docker-compose.yml</code></p>
+<p>To save your changes hit ctrl-x and it will prompt you to save your changes. Enter y/yes and you should be good to go. If you want, try rebooting the pi and once it has finished booting run <code>docker ps</code> in the terminal to see if the container is running. It should appear in the list of running containers.</p>
 
         </div>
         <div class="footer-nav">
